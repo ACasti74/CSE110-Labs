@@ -13,9 +13,9 @@ import java.util.Scanner;
 public class Lab01 {
 
     public static void main(String[] args) {
-        double test1 = 0;
-        double test2 = 0;
-        double test3 = 0;
+        double test1;
+        double test2;
+        double test3;
         final double numberOfTests = 3.0;
 
         Scanner keyboard = new Scanner(System.in);
@@ -23,14 +23,17 @@ public class Lab01 {
         System.out.println("Enter the score on the first test:" );
         test1 = keyboard.nextDouble();
         System.out.println("Your Test 1 score is: " + test1);
+
         System.out.println("Enter the score on the second test:" );
         test2 = keyboard.nextDouble();
         System.out.println("Your Test 2 score is: " + test2);
+
         System.out.println("Enter the score on the third test:" );
         test3 = keyboard.nextDouble();
         System.out.println("Your Test 3 score is: " + test3);
 
-        double average = (test1 + test2 + test3) / numberOfTests;
+        double average;
+        average = (test1 + test2 + test3) / numberOfTests;
         System.out.println("Your average score is:" + average);
 
 

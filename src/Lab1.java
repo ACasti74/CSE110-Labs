@@ -1,16 +1,14 @@
-package Labs;
-
 import java.util.Scanner;
 
 /**
  * Author: Alejandro Castillo
- * FileName: Lab01.java
+ * FileName: Lab1.java
  * Specification: Program that calculate average of tests taken
  * For: CSE 110 - Lab #1
  * Time Spent: 30 Minutes
  */
 
-public class Lab01 {
+public class Lab1 {
 
     public static void main(String[] args) {
         double test1;

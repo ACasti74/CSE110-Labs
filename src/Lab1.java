@@ -14,6 +14,7 @@ public class Lab1 {
         double test1;
         double test2;
         double test3;
+        double average;
         final double numberOfTests = 3.0;
 
         Scanner keyboard = new Scanner(System.in);
@@ -30,7 +31,6 @@ public class Lab1 {
         test3 = keyboard.nextDouble();
         System.out.println("Your Test 3 score is: " + test3);
 
-        double average;
         average = (test1 + test2 + test3) / numberOfTests;
         System.out.println("Your average score is:" + average);
 

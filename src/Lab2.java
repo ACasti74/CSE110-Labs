@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 /**
  * Author: Alejandro Castillo
- * FileName: Lab1.java
+ * FileName: Lab2.java
  * Specification: String Methods
  * For: CSE 110 - Lab #2
  * Time Spent: 30 Minutes

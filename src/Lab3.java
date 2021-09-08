@@ -59,7 +59,7 @@ public class Lab3 {
                         }
                     }
                 }
-                double totalWeighted = ((finalExamGrade) / (200 * 50)) + (midtermExam * 0.25) + (homeworkGrade * 0.25);
+                double totalWeighted = ((finalExamGrade / 200) * 50) + (midtermExam * 0.25) + (homeworkGrade * 0.25);
 
                 if (totalWeighted >= 50) {
                     System.out.println("Student's Weighted Total is " + totalWeighted);

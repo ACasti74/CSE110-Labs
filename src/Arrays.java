@@ -23,5 +23,10 @@ public class Arrays {
             }
             index++;
         }
+
+        for (index = 0; index < nums.length; index++) {
+            System.out.print(nums[index]);
+        }
     }
+
 }

@@ -1,6 +1,14 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Author: Alejandro Castillo
+ * FileName: Assignment04.java
+ * Specification: MasterMind.
+ * For: CSE 110 - Assignment04
+ * Time Spent: 90 Minutes
+ */
+
 public class Assignment04 {
 
     public static void main(String[] args) {

@@ -15,7 +15,7 @@ public class Assignment05 {
         printTotal(1,2,3);
         int total = getTotal(1,2,3);
         System.out.println(total);
-        double average= getAverage(1,2,3);
+        double average= getAverage(0,1,3);
         System.out.println(average);
         average= averageLength("test","test21", "testtest");
         System.out.println(average);
@@ -48,12 +48,12 @@ public class Assignment05 {
     }
 
     static double getAverage(int num1, int num2, int num3) {
-        int average = (num1 + num2 + num3) / 3;
+        double average = (num1 + num2 + num3) / 3.0;
         return average;
     }
 
     static double averageLength(String param1, String param2, String param3) {
-        int lengthAverages = (param1.length() + param2.length() + param3.length()) / 3;
+        double lengthAverages = (param1.length() + param2.length() + param3.length()) / 3.0;
         return lengthAverages;
     }
 
@@ -66,12 +66,10 @@ public class Assignment05 {
     }
 
     static String stringOfStars(String parameter) {
-        String star = "*";
-        int i = 1;
-        int parameterLength = parameter.length();
-        while (i < parameterLength) {
+        String star = "";
+        for (int i = 0; i < parameter.length(); i++) {
             System.out.print(star);
-            i++;
+            star = star + "*";
         }
         return star;
     }
@@ -112,6 +110,4 @@ public class Assignment05 {
         }
         return output;
     }
-
-
 }

@@ -1,3 +1,12 @@
+
+/**
+ * Author: Alejandro Castillo
+ * FileName: Assignment05.java
+ * Specification: Methods
+ * For: CSE 110 - Assignment05
+ * Time Spent: 60 Minutes
+ */
+
 public class Assignment05 {
 
     public static void main(String[] args) {

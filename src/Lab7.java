@@ -4,7 +4,7 @@ public class Lab7 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String sFirstname, sLastname, fullName,sAsuID;
+        String sFirstname, sLastname, fullName, sAsuID;
         double sGrade;
         String pName, pDesc, pFname;
         // Read some input data
@@ -23,7 +23,8 @@ public class Lab7 {
         pFname = scan.nextLine();
         println("Program grade?");
         sGrade = scan.nextDouble(); //scan.nextLine();
-        println(""); scan.close();
+        println("");
+        scan.close();
         // Create a Student object "student1"
         Student student1 = new Student(sFirstname, sLastname, fullName, sAsuID);
         // Use the setGrade setter to set student1's grade
@@ -34,6 +35,7 @@ public class Lab7 {
         // Invoke makeReport to show the report of student1
         makeReport(program1);
     }
+
     private static void makeReport(Program program) {
         println("\n========== Program Submission Detail ==========");
         pprint("Student", program.getAuthor().getFullName());
@@ -45,9 +47,11 @@ public class Lab7 {
         pprint("Description", program.getDescription());
         pprint("Datetime", program.getCreatedDate());
     }
+
     private static void pprint(String key, String value) {
         println(String.format("%-12s: %-10s", key, value));
     }
+
     private static void println(String s) {
         System.out.println(s);
     }

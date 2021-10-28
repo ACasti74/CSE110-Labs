@@ -1,4 +1,4 @@
-import org.apache.commons.lang3.ArrayUtils;
+
 
 /**
  * Author: Alejandro Castillo
@@ -43,7 +43,11 @@ public class Assignment06 {
     }
 
     public static int[] getAllButFirst(int[] arr) {
-        return ArrayUtils.remove(arr, 0);
+        int[] anotherArray = new int[arr.length - 1];
+        for (int i = 1; i < arr.length; i++) {
+            anotherArray[i - 1] = arr[i];
+        }
+        return anotherArray;
     }
 
     public static int getIndexOfMin(int[] arr) {

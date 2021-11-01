@@ -1,10 +1,14 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Practice {
 
+    private static Scanner keyboard = new Scanner(System.in);
+
     public static void main(String[] args) {
+
         String [] stringArray = {"Alex", "Pedro", "Juan"};
         int [] nums = {1,2,3,12,8,12,9,15,12};
         arrayOfInts(nums);
@@ -28,6 +32,9 @@ public class Practice {
         List<String> list = new ArrayList<>(Arrays.asList(stringArray));
         String listOfNames = stringElements(list);
         System.out.println(listOfNames.replaceAll(", $", ""));
+
+        fibonacciSeries(10);
+        reverse("NoMoreBugs!");
 
     }
 
@@ -108,4 +115,34 @@ public class Practice {
         }
         return output;
     }
+
+    /**
+     * Method that perform Fibonacci series
+     */
+    public static void fibonacciSeries(int count) {
+        int num1 = 0;
+        int num2 = 1;
+        int num3;
+        System.out.print(num1 + " " + num2);
+        for (int i = 2; i < count; i++) {
+            num3 = num1 + num2;
+            System.out.print(" " + num3);
+            num1 = num2;
+            num2 = num3;
+        }
+        System.out.println(num1 + " " + num2);
+    }
+
+    /**
+     * Method that prints the reverse word
+     */
+    public static void reverse(String word) {
+        String reverse = "";
+        for (int i = word.length() - 1; i >= 0; i --){
+            reverse = reverse + word.charAt(i);
+        }
+        System.out.println("Reverse string of the word: " + word + " is: " + reverse);
+    }
+
+
 }

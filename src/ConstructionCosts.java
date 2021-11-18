@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 /**
  * Author: Alejandro Castillo
- * FileName: Assignment02.java
+ * FileName: ConstructionCosts.java
  * Specification: Program that compute the materials and costs required for a construction project.
- * For: CSE 110 - Assignment02
+ * For: CSE 110 - ConstructionCosts
  * Time Spent: 90 Minutes
  */
 
-public class Assignment02 {
+public class ConstructionCosts {
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

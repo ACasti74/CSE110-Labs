@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 /**
  * Author: Alejandro Castillo
- * FileName: Assignment01.java
- * Specification: Program that calculate average of tests taken
+ * FileName: PizzaProgram.java
+ * Specification: Program that calculate the Pizzas available form children and adults
  * For: CSE 110 - Assignment 01
  * Time Spent: 30 Minutes
  */
 
-public class Assignment01 {
+public class PizzaProgram {
 
     public static void main(String[] args) {
 

@@ -36,6 +36,11 @@ public class Practice {
         fibonacciSeries(10);
         reverse("NoMoreBugs!");
 
+        String compositeNumber = primeOrComposite(10);
+        String primeNumber = primeOrComposite(7);
+        System.out.println(compositeNumber + "\n" + primeNumber);
+        flipFlop(100);
+
     }
 
     /**
@@ -145,5 +150,40 @@ public class Practice {
         System.out.println("\nReverse string of the word: " + word + " is: " + reverse);
     }
 
+    /**
+     * Method that checks if a number is prime or composite
+     */
 
+    public static String primeOrComposite(int num) {
+        String output = "";
+
+        if (num % 2 == 0) {
+            output = "It is a composite number";
+        } else {
+            output = "It is a prime number";
+        }
+        return output;
+    }
+
+    /**
+     * FizzBuzz Program
+     */
+
+    public static void flipFlop(int count) {
+        int i;
+
+        for (i = 1; i <= count; i++) {
+            if (i % 15 == 0) {
+                System.out.print("FlipFlop" + " ");
+            } else if (i % 3 == 0) {
+                System.out.print("Flip" + " ");
+            } else if (i % 5 == 0) {
+                System.out.print("Flop" + " ");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("FlipFlop" + " ");
+            } else {
+                System.out.print(i + " ");
+            }
+        }
+    }
 }

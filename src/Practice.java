@@ -1,45 +1,50 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 public class Practice {
 
     private static Scanner keyboard = new Scanner(System.in);
+    private static List<Integer> list = new ArrayList<>();
+    private static List<Integer> newList = new ArrayList<>();
 
     public static void main(String[] args) {
 
-        String [] stringArray = {"Alex", "Pedro", "Juan"};
-        int [] nums = {1,2,3,12,8,12,9,15,12};
-        arrayOfInts(nums);
-        findStringInArray(stringArray, "Pedro");
-        duplicatesInArray(nums);
+//        String [] stringArray = {"Alex", "Pedro", "Juan"};
+//        int [] nums = {1,2,3,12,8,12,9,15,12};
+//        arrayOfInts(nums);
+//        findStringInArray(stringArray, "Pedro");
+//        duplicatesInArray(nums);
+//
+//        String[] listOfProducts = {"Rice", "Beans", "Cheese"};
+//        Float[] priceOfProducts = {5.75f, 4.35f, 7.98f};
+//        String[] soldProducts = {"Rice", "Beans", "Cheese"};
+//        Float[] soldPriceProduct = {5.75f, 4.35f, 7.98f};
+//
+//        List<String> productList = new ArrayList<>(Arrays.asList(listOfProducts));
+//        List<Float> productPrices = new ArrayList<>(Arrays.asList(priceOfProducts));
+//        List<String> productSold = new ArrayList<>(Arrays.asList(soldProducts));
+//        List<Float> soldPrice = new ArrayList<>(Arrays.asList(soldPriceProduct));
+//
+//
+//        int wrongsProductPrice = priceCheck(productList, productPrices, productSold, soldPrice);
+//        System.out.println(wrongsProductPrice);
+//
+//        List<String> list = new ArrayList<>(Arrays.asList(stringArray));
+//        String listOfNames = stringElements(list);
+//        System.out.println(listOfNames.replaceAll(", $", ""));
+//
+//        fibonacciSeries(10);
+//        reverse("NoMoreBugs!");
+//
+//        String compositeNumber = primeOrComposite(10);
+//        String primeNumber = primeOrComposite(7);
+//        System.out.println(compositeNumber + "\n" + primeNumber);
+//        flipFlop(100);
 
-        String[] listOfProducts = {"Rice", "Beans", "Cheese"};
-        Float[] priceOfProducts = {5.75f, 4.35f, 7.98f};
-        String[] soldProducts = {"Rice", "Beans", "Cheese"};
-        Float[] soldPriceProduct = {5.75f, 4.35f, 7.98f};
-
-        List<String> productList = new ArrayList<>(Arrays.asList(listOfProducts));
-        List<Float> productPrices = new ArrayList<>(Arrays.asList(priceOfProducts));
-        List<String> productSold = new ArrayList<>(Arrays.asList(soldProducts));
-        List<Float> soldPrice = new ArrayList<>(Arrays.asList(soldPriceProduct));
-
-
-        int wrongsProductPrice = priceCheck(productList, productPrices, productSold, soldPrice);
-        System.out.println(wrongsProductPrice);
-
-        List<String> list = new ArrayList<>(Arrays.asList(stringArray));
-        String listOfNames = stringElements(list);
-        System.out.println(listOfNames.replaceAll(", $", ""));
-
-        fibonacciSeries(10);
-        reverse("NoMoreBugs!");
-
-        String compositeNumber = primeOrComposite(10);
-        String primeNumber = primeOrComposite(7);
-        System.out.println(compositeNumber + "\n" + primeNumber);
-        flipFlop(100);
+        String s = "1 2 4 6 7 8 0";
+        findSubsequences(s);
+        System.out.print(newList);
 
     }
 
@@ -183,6 +188,24 @@ public class Practice {
                 System.out.print("FlipFlop" + " ");
             } else {
                 System.out.print(i + " ");
+            }
+        }
+    }
+
+    private static void findSubsequences(String s) {
+        Scanner scanner = new Scanner(s);
+        while(scanner.hasNextInt()) {
+            list.add(scanner.nextInt());
+        }
+        int i = 0;
+        for (int n = 0; n <= list.size(); n++) {
+            while (i <= list.size()) {
+                if (list.get(i) == n) {
+                    newList.add(n);
+                    i++;
+                } else {
+                    continue;
+                }
             }
         }
     }
